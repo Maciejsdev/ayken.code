@@ -8,7 +8,7 @@ const Logo = () => {
           className="glitch layers text-4xl font-bold text-emerald-300"
           data-text="代码瘾君子"
         >
-          <span className="uppercase">ayken.codes</span>
+          <span className="uppercase">ayken.code</span>
         </h2>
       </div>
     </>

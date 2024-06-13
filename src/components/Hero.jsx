@@ -1,5 +1,5 @@
 import heroImg from "../assets/hero.svg";
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 /* eslint-disable react/no-unescaped-entities */
 const Hero = () => {
@@ -20,14 +20,11 @@ const Hero = () => {
             and seamless functionality."
           </p>
           <div className="flex gap-x-4 mt-4">
-            <a href="#">
+            <a href="https://github.com/Maciejsdev">
               <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-white duration-300" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/maciej-s%C5%82awek-45a821304/">
               <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-white duration-300" />
-            </a>
-            <a href="#">
-              <FaTwitterSquare className="h-8 w-8 text-slate-500 hover:text-white duration-300" />
             </a>
           </div>
         </article>
