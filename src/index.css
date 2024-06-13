@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0a192f;
+  color: white;
+}
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-7xl px-8;
+  }
+}
+.nav {
+  justify-content: space-between;
+}
