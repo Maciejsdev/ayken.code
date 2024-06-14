@@ -5,7 +5,9 @@ const Loading = () => {
   return (
     <div className="min-h-screen flex items-center justify-center mx-3">
       <div className="text-center">
-        <Logo />
+        <div className="mb-10">
+          <Logo />
+        </div>
         <div className="container-load">
           <div id="loader">
             <div id="title" className="flex">

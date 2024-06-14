@@ -107,7 +107,7 @@
     counter-reset: num var(--num);
     margin-left: auto;
     transition: --num 5s;
-    animation: counting 3s ease-in-out;
+    animation: counting 2s ease-in-out;
     font-family: "Orbitron";
     animation-fill-mode: forwards;
 
@@ -131,7 +131,7 @@
     height: 0.6rem;
     margin: 1px 0px;
     background: white;
-    animation: charging 3s ease-in-out;
+    animation: charging 2s ease-in-out;
     animation-fill-mode: forwards;
   }
 }
@@ -146,7 +146,7 @@
     width: 1rem;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #6ee7b7;
     color: black;
     border-radius: 3px;
   }
@@ -162,9 +162,9 @@
     font-size: 12px;
     white-space: pre;
     text-align: end;
-    color: #b5b5b5;
+    color: #6ee7b7;
     content: "";
-    animation: initText 3s ease;
+    animation: initText 2s ease;
     animation-fill-mode: forwards;
   }
 }
