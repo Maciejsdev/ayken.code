@@ -1,9 +1,30 @@
+import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import { links } from "../data";
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+      setShowNavbar(visible);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <nav>
+    <nav
+      className={`navbar ${showNavbar ? "navbar--visible" : "navbar--hidden"}`}
+    >
       <div className="nav mx-auto max-w-9xl px-8 py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
         <Logo />
         <div className="flex gap-x-3">
@@ -25,4 +46,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
