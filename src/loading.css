@@ -80,14 +80,9 @@
     transform: rotate(360deg);
   }
 }
-.flex {
-  display: flex;
-}
 
 .container-load {
-  display: flex;
-  height: 100vh;
-  flex: 1;
+  display: block;
   align-items: center;
   justify-content: center;
 }
@@ -95,7 +90,6 @@
 #loader {
   display: flex;
   flex-direction: column;
-  width: 80%;
   animation: opcty 1s ease-in-out;
 
   .loading-text {

@@ -4,7 +4,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 /* eslint-disable react/no-unescaped-entities */
 const Hero = () => {
   return (
-    <div className="py-24">
+    <div className="py-24" id="home">
       <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8">
         <article>
           <h1 className="text-7xl font-bold tracking-wider text-emerald-300">
