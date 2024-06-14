@@ -26,13 +26,3 @@ body {
   z-index: 1000;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-
-.navbar--hidden {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.navbar--visible {
-  transform: translateY(0);
-  opacity: 1;
-}

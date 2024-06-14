@@ -4,11 +4,11 @@ import { links } from "../data";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
       const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
       setShowNavbar(visible);
       setPrevScrollPos(currentScrollPos);
@@ -22,9 +22,7 @@ const Navbar = () => {
   }, [prevScrollPos]);
 
   return (
-    <nav
-      className={`navbar ${showNavbar ? "navbar--visible" : "navbar--hidden"}`}
-    >
+    <nav className={`navbar ${showNavbar ? "navbar block" : "navbar hidden"}`}>
       <div className="nav mx-auto max-w-9xl px-8 py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
         <Logo />
         <div className="flex gap-x-3">
