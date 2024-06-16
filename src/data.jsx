@@ -86,4 +86,12 @@ export const projects = [
     title: "Color palette",
     text: "App that lets you choose a color and in return gives u shades of it.",
   },
+  {
+    id: nanoid(),
+    img: "https://i.ibb.co/LCttPcR/image.png",
+    url: "https://clever-rugelach-7ac8d5.netlify.app/",
+    github: "https://github.com/Maciejsdev/redux-cart",
+    title: "Redux cart",
+    text: "Case of redux usage in app.",
+  },
 ];
