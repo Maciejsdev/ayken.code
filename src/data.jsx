@@ -32,6 +32,22 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
+    img: "https://i.ibb.co/bKScd0x/image.png",
+    url: "https://wondrous-lamington-2a3cb9.netlify.app/",
+    github: "https://github.com/Maciejsdev/test-store",
+    title: "Store app",
+    text: "Complex store app with many features.",
+  },
+  {
+    id: nanoid(),
+    img: "https://i.ibb.co/LCttPcR/image.png",
+    url: "https://clever-rugelach-7ac8d5.netlify.app/",
+    github: "https://github.com/Maciejsdev/redux-cart",
+    title: "Redux cart",
+    text: "Case of redux usage in app.",
+  },
+  {
+    id: nanoid(),
     img: "https://i.ibb.co/19qjY9r/mixmaster.png",
     url: "https://taupe-blini-5acd35.netlify.app/",
     github: "https://github.com/Maciejsdev/AraAra-cocktail",
@@ -85,13 +101,5 @@ export const projects = [
     github: "https://github.com/Maciejsdev/Color-Generator",
     title: "Color palette",
     text: "App that lets you choose a color and in return gives u shades of it.",
-  },
-  {
-    id: nanoid(),
-    img: "https://i.ibb.co/LCttPcR/image.png",
-    url: "https://clever-rugelach-7ac8d5.netlify.app/",
-    github: "https://github.com/Maciejsdev/redux-cart",
-    title: "Redux cart",
-    text: "Case of redux usage in app.",
   },
 ];
